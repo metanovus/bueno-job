@@ -28,11 +28,13 @@
 bueno-job/
 │
 ├── app.py                  # Главный файл запуска Streamlit
+├── notebooks/
+│   └── buenojob-notebook.ipynb     # Ноутбук проекта без визуализации
 ├── utils/
 │   ├── __init__.py         # Инициализация пакета
 │   ├── resume_loader.py    # Функции для загрузки и обработки резюме
 │   ├── qdrant_client.py    # Функции для работы с Qdrant
-│   ├── hh_api.py          # Функции для работы с API hh.ru
+│   ├── hh_api.py           # Функции для работы с API hh.ru
 │   └── vectorizer.py       # Функции для векторизации текста
 ├── requirements.txt        # Список зависимостей для установки
 └── README.md               # Документация
@@ -53,7 +55,7 @@ bueno-job/
    В этом файле находятся функции для работы с API hh.ru: получения списка вакансий по заданным критериям.
 
 5. **utils/vectorizer.py**:
-   Содержит функцию для векторизации текста с использованием модели [rubert-base-cased-sentence](https://huggingface.co/DeepPavlov/rubert-base-cased-sentence).
+   Содержит функцию для векторизации текста с использованием модели Sentence-BERT.
 
 6. **requirements.txt**:
    Содержит все зависимости, необходимые для работы проекта. Для установки зависимостей используйте команду:
